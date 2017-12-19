@@ -8,10 +8,10 @@ function initialScreen() {
 
 initialScreen();
 
-//Create a function, generateHTML(), that is triggered by the start button, and generates the HTML seen on the project video...
+//Create a function, generateHTML(), that is triggered by the start button...
 
 $("body").on("click", ".start-button", function(event){
-	event.preventDefault();  // added line to test issue on GitHub Viewer
+	event.preventDefault();
 	clickSound.play();
 	generateHTML();
 
@@ -37,7 +37,7 @@ $("body").on("click", ".answer", function(event){
 }); // Close .answer click
 
 $("body").on("click", ".reset-button", function(event){
-	clickSound.play();
+	// clickSound.play();
 	resetGame();
 }); // Closes reset-button click
 
